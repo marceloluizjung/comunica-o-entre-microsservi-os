@@ -5,13 +5,15 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "startDev": "nodemon app.js"
+    "startDev": "set NODE_ENV=dev&&nodemon app.js",
+    "startContainer": "set NODE_ENV=container&&nodemon app.js"
   },
   "dependencies": {
+    "amqplib": "0.8.0",
     "cors": "^2.8.5",
     "express": "^4.18.1",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.6.1"
+    "mongoose": "5.12.7"
   },
   "devDependencies": {
     "nodemon": "^2.0.20"
